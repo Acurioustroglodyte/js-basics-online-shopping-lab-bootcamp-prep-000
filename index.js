@@ -42,20 +42,7 @@ function total() {
   return totalValue;
 }
 
-function removeFromCart(item) {
-  var removeIndex = [];
-  for (let i = 0; i < cart.length; i++) {
-    if (cart[i]["itemName"] === item) {
-      removeIndex = cart.indexOf(cart[i]);
-      console.log(removeIndex);
-    }
-  }
-  for (let i = 0; i < removeIndex.length; i++) {
-    cart.splice(removeIndex[i], 1);
-    console.log(removeIndex[i]);
-  }
-  return item;
-}
+
 
 function placeOrder(cardNumber) {
   var cartTotal = total();
