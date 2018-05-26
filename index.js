@@ -42,7 +42,13 @@ function total() {
   return totalValue;
 }
 
-
+function removeFromCart(item) {
+  for (let i = 0; i < cart.length; i++) {
+    if (cart[i]["itemName"] === item) {
+      splice()
+    }
+  }
+}
 
 function placeOrder(cardNumber) {
   var cartTotal = total();
